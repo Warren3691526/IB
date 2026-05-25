@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IC Markets IB - Free VIP Telegram Signals</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Kanit', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
+
+    <nav class="bg-slate-950/80 backdrop-blur border-b border-slate-800 sticky top-0 z-50 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-chart-line text-emerald-400 text-2xl"></i>
+                <span class="font-bold text-xl tracking-wider text-white">FX<span class="text-emerald-400">VIP</span></span>
+            </div>
+            <button onclick="toggleView()" id="viewToggleBtn" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition">
+                <i class="fa-solid fa-lock mr-1"></i> สำหรับแอดมิน
+            </button>
+        </div>
+    </nav>
+
+    <main id="landingPage" class="flex-grow">
+        
+        <section class="relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 pt-16 pb-20 px-4 text-center">
+            <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+            <div class="max-w-3xl mx-auto relative z-10">
+                <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Exclusive Partner With IC Markets
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mt-6 leading-tight">
+                    สมัครเทรดภายใต้ IB รับสัญญาณ <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">VIP Telegram ฟรีตลอดชีพ!</span>
+                </h1>
+                <p class="text-slate-400 text-base md:text-lg mt-6 max-w-xl mx-auto">
+                    เข้าถึงกลุ่มสัญญาณเทรดแม่นยำ วิเคราะห์กราฟรายวัน และบทเรียนพรีเมียม เงื่อนไขง่ายๆ เพียงเปิดบัญชีและเทรดกับโบรกเกอร์ระดับโลกอันดับ 1
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://icmarkets.com/?camp=59188" target="_blank" class="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-slate-950 text-lg font-bold px-8 py-4 rounded-xl shadow-lg shadow-emerald-500/20 transform hover:-translate-y-0.5 transition duration-200">
+                        <i class="fa-solid fa-user-plus mr-2"></i> 1. คลิกเปิดบัญชี IC Markets
+                    </a>
+                    <a href="#register-form" class="bg-slate-800 hover:bg-slate-700 text-white text-lg font-medium px-8 py-4 rounded-xl border border-slate-700 transition duration-200">
+                        2. ส่งฟอร์มรับสิทธิ์
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-4 py-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-white mb-12">ขั้นตอนการรับสิทธิ์ง่ายๆ ใน 5 ขั้นตอน</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 relative">
+                    <div class="w-10 h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-lg border border-emerald-500/20 mb-4">1</div>
+                    <h3 class="font-semibold text-white mb-2">คลิกสมัครลิงก์ IB</h3>
+                    <p class="text-xs text-slate-400">กดปุ่มเปิดบัญชีผ่านลิงก์พันธมิตรอย่างเป็นทางการเพื่อผูกสิทธิ์</p>
+                </div>
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 relative">
+                    <div class="w-10 h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-lg border border-emerald-500/20 mb-4">2</div>
+                    <h3 class="font-semibold text-white mb-2">ดูวิดีโอแนะนำ</h3>
+                    <p class="text-xs text-slate-400">ดูวิธีการกรอกข้อมูลในระบบ IC Markets อย่างละเอียดเพื่อไม่ให้ผิดพลาด</p>
+                </div>
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 relative">
+                    <div class="w-10 h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-lg border border-emerald-500/20 mb-4">3</div>
+                    <h3 class="font-semibold text-white mb-2">ฝากเงินเข้าพอร์ต</h3>
+                    <p class="text-xs text-slate-400">ทำการฝากเงินเข้าพอร์ตตามขั้นต่ำของโบรกเกอร์เพื่อเปิดใช้งานบัญชีจริง</p>
+                </div>
+                <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 relative">
+                    <div class="w-10 h-10 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center font-bold text-lg border border-emerald-500/20 mb-4">4</div>
+                    <h3 class="font-semibold text-white mb-2">กรอกฟอร์มส่งข้อมูล</h3>
+                    <p class="text-xs text-slate-400">กรอกหมายเลขพอร์ตและข้อมูลด้านล่างนี้เพื่อให้ทีมงานตรวจสอบ</p>
+                </div>
+                <div class="bg-slate-950 p-6 rounded-2xl border border-emerald-500/30 relative shadow-lg shadow-emerald-500/5">
+                    <div class="w-10 h-10 bg-emerald-500 text-slate-950 rounded-xl flex items-center justify-center font-bold text-lg mb-4">5</div>
+                    <h3 class="font-semibold text-emerald-400 mb-2">รับลิงก์ Telegram VIP</h3>
+                    <p class="text-xs text-slate-300">ระบบตรวจสอบเสร็จสิ้น รับลิงก์เชิญเข้ากลุ่มสัญญาณทันที!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-950 px-4 py-16 border-t border-b border-slate-800">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">วิดีโอแนะนำการกรอกข้อมูลสมัครเปิดบัญชี</h2>
+                <p class="text-slate-400 text-sm mb-8 max-w-lg mx-auto">ดูคลิปสั้นๆ นี้เพื่อศึกษาขั้นตอนการสมัครแบบละเอียด ป้องกันการหลุดจากพอร์ต IB ของเรา</p>
+                
+                <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="register-form" class="max-w-3xl mx-auto px-4 py-20">
+            <div class="bg-slate-950 p-8 md:p-10 rounded-3xl border border-slate-800 shadow-xl">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-white">แบบฟอร์มลงทะเบียนรับสิทธิ์</h2>
+                    <p class="text-sm text-slate-400 mt-2">กรุณากรอกข้อมูลจริงตามที่ลงทะเบียนกับทางโบรกเกอร์</p>
+                </div>
+
+                <form id="regForm" onsubmit="submitForm(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div class="sm:col-span-2">
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">ชื่อ - นามสกุล *</label>
+                            <input type="text" id="fullName" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">ชื่อเล่น *</label>
+                            <input type="text" id="nickname" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">พ.ศ. เกิด (อายุ 18+ เท่านั้น) *</label>
+                            <select id="birthYear" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm">
+                                <option value="">เลือก พ.ศ. เกิด</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">อาชีพ *</label>
+                            <select id="occupation" required onchange="toggleOtherOccupation()" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm">
+                                <option value="">เลือกอาชีพ</option>
+                                <option value="พนักงานบริษัท">พนักงานบริษัท</option>
+                                <option value="ข้าราชการ">ข้าราชการ</option>
+                                <option value="ธุรกิจส่วนตัว">ธุรกิจส่วนตัว</option>
+                                <option value="ฟรีแลนซ์">ฟรีแลนซ์</option>
+                                <option value="นักศึกษา">นักศึกษา</option>
+                                <option value="เทรดเดอร์เต็มเวลา">เทรดเดอร์เต็มเวลา</option>
+                                <option value="อื่นๆ">อื่นๆ (โปรดระบุ)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="otherOccupationWrapper" class="hidden">
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">ระบุอาชีพของคุณ *</label>
+                        <input type="text" id="otherOccupation" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm" placeholder="เช่น ชาวสวน, บาร์เทนเดอร์">
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">จังหวัด *</label>
+                            <select id="province" required onchange="handleProvinceChange()" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm">
+                                <option value="">เลือกจังหวัด</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">อำเภอ / เขต *</label>
+                            <select id="amphoe" required disabled class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm disabled:opacity-50">
+                                <option value="">โปรดเลือกจังหวัดก่อน</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">เบอร์โทรศัพท์มือถือ (ไทย 10 หลัก) *</label>
+                            <input type="tel" id="phone" required placeholder="เช่น 0812345678" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">อีเมลที่สมัครกับ Broker *</label>
+                            <input type="email" id="email" required placeholder="example@email.com" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Account ID (MT4/MT5 เท่านั้น) *</label>
+                        <input type="text" id="accountId" required placeholder="ระบุเฉพาะตัวเลข เช่น 4510293" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 text-sm">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">ประสบการณ์ในการเทรด Forex *</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <label class="flex items-start p-3 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-slate-700 transition">
+                                <input type="radio" name="experience" value="Level 1: Beginner" required class="mt-1 text-emerald-500 focus:ring-0">
+                                <div class="ml-3">
+                                    <span class="block text-sm font-medium text-white">Level 1: Beginner</span>
+                                    <span class="block text-xs text-slate-400">มือใหม่ ไม่มีประสบการณ์มาก่อน</span>
+                                </div>
+                            </label>
+                            <label class="flex items-start p-3 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-slate-700 transition">
+                                <input type="radio" name="experience" value="Level 2: Intermediate" class="mt-1 text-emerald-500 focus:ring-0">
+                                <div class="ml-3">
+                                    <span class="block text-sm font-medium text-white">Level 2: Intermediate</span>
+                                    <span class="block text-xs text-slate-400">พอมีพื้นฐาน แต่ยังไม่มีกำไรสม่ำเสมอ</span>
+                                </div>
+                            </label>
+                            <label class="flex items-start p-3 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-slate-700 transition">
+                                <input type="radio" name="experience" value="Level 3: Advanced" class="mt-1 text-emerald-500 focus:ring-0">
+                                <div class="ml-3">
+                                    <span class="block text-sm font-medium text-white">Level 3: Advanced</span>
+                                    <span class="block text-xs text-slate-400">เทรดเป็นระบบ เข้าใจการคุมความเสี่ยง</span>
+                                </div>
+                            </label>
+                            <label class="flex items-start p-3 bg-slate-900 border border-slate-800 rounded-xl cursor-pointer hover:border-slate-700 transition">
+                                <input type="radio" name="experience" value="Level 4: Professional" class="mt-1 text-emerald-500 focus:ring-0">
+                                <div class="ml-3">
+                                    <span class="block text-sm font-medium text-white">Level 4: Professional</span>
+                                    <span class="block text-xs text-slate-400">เทรดเป็นอาชีพหลัก ทำกำไรยั่งยืน</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-4 px-6 rounded-xl transition shadow-lg shadow-emerald-500/10 flex items-center justify-center space-x-2">
+                        <span>ส่งข้อมูลเพื่อรับสิทธิ์เข้ากลุ่ม Telegram</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <main id="adminPage" class="hidden flex-grow max-w-7xl mx-auto w-full px-4 py-8">
+        <div id="adminAuthSection" class="max-w-md mx-auto bg-slate-950 p-8 rounded-2xl border border-slate-800 text-center my-12">
+            <i class="fa-solid fa-lock-open text-3xl text-emerald-400 mb-4"></i>
+            <h2 class="text-xl font-bold text-white mb-4">ระบบจัดการข้อมูลสำหรับผู้ดูแลระบบ</h2>
+            <input type="password" id="adminPasswordInput" placeholder="ใส่รหัสผ่านแอดมิน" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white text-center mb-4 focus:outline-none focus:border-emerald-500">
+            <button onclick="fetchAdminData()" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-medium py-3 rounded-xl border border-slate-700 transition">
+                เข้าสู่ระบบ / ดึงข้อมูลข้อมูลใหม่
+            </button>
+        </div>
+
+        <div id="adminContentSection" class="hidden space-y-6">
+            <div class="flex justify-between items-center flex-wrap gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold text-white">รายชื่อผู้ลงทะเบียนสมัคร VIP</h2>
+                    <p class="text-xs text-slate-400 mt-1">ข้อมูลดึงสดจาก Google Sheets</p>
+                </div>
+                <button onclick="fetchAdminData()" class="bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 text-xs px-4 py-2 rounded-lg border border-emerald-500/20 transition">
+                    <i class="fa-solid fa-arrows-rotate mr-1"></i> รีเฟรชข้อมูล
+                </button>
+            </div>
+
+            <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-xl">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse whitespace-nowrap">
+                        <thead>
+                            <tr class="bg-slate-900 border-b border-slate-800 text-slate-400 text-xs uppercase tracking-wider">
+                                <th class="p-4">ID</th>
+                                <th class="p-4">ชื่อ - นามสกุล</th>
+                                <th class="p-4">พอร์ต ID</th>
+                                <th class="p-4">เบอร์โทร / อีเมล</th>
+                                <th class="p-4">จังหวัด</th>
+                                <th class="p-4">สถานะ</th>
+                                <th class="p-4 text-center">จัดการ</th>
+                            </tr>
+                        </thead>
+                        <tbody id="adminTableBody" class="text-sm divide-y divide-slate-800/50">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="editModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-slate-950 border border-slate-800 max-w-lg w-full rounded-2xl p-6 space-y-4">
+            <h3 class="text-lg font-bold text-white"><i class="fa-solid fa-user-pen text-emerald-400 mr-2"></i>แก้ไขและพิจารณาสิทธิ์</h3>
+            <form id="editForm" onsubmit="saveEdit(event)" class="space-y-4 text-xs">
+                <input type="hidden" id="editId">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-slate-400 block mb-1">ชื่อ-สกุล</label>
+                        <input type="text" id="editFullName" required class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white">
+                    </div>
+                    <div>
+                        <label class="text-slate-400 block mb-1">ชื่อเล่น</label>
+                        <input type="text" id="editNickname" required class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-slate-400 block mb-1">เบอร์โทร</label>
+                        <input type="text" id="editPhone" required class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white">
+                    </div>
+                    <div>
+                        <label class="text-slate-400 block mb-1">Account ID</label>
+                        <input type="text" id="editAccountId" required class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-slate-400 block mb-1">อีเมล</label>
+                    <input type="email" id="editEmail" required class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white">
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <div>
+                        <label class="text-slate-400 block mb-1">สถานะสิทธิ์</label>
+                        <select id="editStatus" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white focus:border-emerald-500">
+                            <option value="Pending">⌛ รอตรวจสอบ (Pending)</option>
+                            <option value="Approved">✅ อนุมัติเข้ากลุ่ม (Approved)</option>
+                            <option value="Rejected">❌ ไม่อนุมัติ / หลุด IB (Rejected)</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="text-slate-400 block mb-1">บันทึกช่วยจำของแอดมิน</label>
+                    <textarea id="editNotes" rows="2" class="w-full bg-slate-900 border border-slate-800 rounded-lg p-2.5 text-white" placeholder="เช่น ย้ายกลุ่มแล้ว, ติดต่อไม่ได้"></textarea>
+                </div>
+                <div class="flex justify-end space-x-3 pt-2">
+                    <button type="button" onclick="closeModal()" class="bg-slate-900 hover:bg-slate-800 text-slate-400 px-4 py-2 rounded-lg border border-slate-800">ยกเลิก</button>
+                    <button type="submit" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-4 py-2 rounded-lg">บันทึกการแก้ไข</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-slate-950 text-center py-6 text-xs text-slate-500 border-t border-slate-950">
+        <p>© 2026 FXVIP Partner with IC Markets. All rights reserved. | การซื้อขาย Forex มีความเสี่ยงสูง โปรดศึกษาข้อมูลก่อนลงทุน</p>
+    </footer>
+
+    <script>
+        // *******************************************
+        // วางลิงก์ WEB APP URL ของคุณที่ได้จาก Google Apps Script ที่นี่!!
+        // *******************************************
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwSMfk3TylEfiuFbomXvApW83sNQA6sD6AmXued_R3vYlibrPQaTrW1WUs1RdTBVgg/exec";
+
+        // จำลองข้อมูล จังหวัด-อำเภอ แบบย่อ (สามารถหา API ทั่วไปมาต่อขยายในภายหลังได้)
+        const ThailandLocationData = {
+            "กรุงเทพมหานคร": ["เขตพระนคร", "เขตดุสิต", "เขตปทุมวัน", "เขตบางรัก", "เขตสุขุมวิท", "เขตจตุจักร"],
+            "เชียงใหม่": ["เมืองเชียงใหม่", "แม่ริม", "หางดง", "สันทราย", "ดอยสะเก็ด"],
+            "ภูเก็ต": ["เมืองภูเก็ต", "กระทู้", "ถลาง"],
+            "ชลบุรี": ["เมืองชลบุรี", "บางละมุง (พัทยา)", "ศรีราชา", "สัตหีบ"],
+            "ขอนแก่น": ["เมืองขอนแก่น", "กระนวน", "ชุมแพ", "บ้านไผ่"]
+        };
+
+        // เริ่มต้นระบบย่อยใน Form
+        window.addEventListener('DOMContentLoaded', () => {
+            // 1. เจนตัวเลือกปี พ.ศ. เกิด (ถอยหลัง 18 ปีขึ้นไป จากปีปัจจุบัน 2569 / 2026)
+            const currentYearTH = 2569; // อิงตามปี ค.ศ. 2026
+            const selectYear = document.getElementById('birthYear');
+            for (let i = currentYearTH - 18; i >= currentYearTH - 80; i--) {
+                let opt = document.createElement('option');
+                opt.value = i;
+                opt.innerHTML = i;
+                selectYear.appendChild(opt);
+            }
+
+            // 2. โหลดรายการจังหวัดลง Dropdown
+            const provinceSelect = document.getElementById('province');
+            Object.keys(ThailandLocationData).forEach(prov => {
+                let opt = document.createElement('option');
+                opt.value = prov;
+                opt.innerHTML = prov;
+                provinceSelect.appendChild(opt);
+            });
+        });
+
+        // ควบคุม Dropdown เชื่อมโยง จังหวัด -> อำเภอ
+        function handleProvinceChange() {
+            const provSelect = document.getElementById('province');
+            const amphoeSelect = document.getElementById('amphoe');
+            const selectedProv = provSelect.value;
+
+            amphoeSelect.innerHTML = '<option value="">เลือกอำเภอ / เขต</option>';
+            
+            if (selectedProv && ThailandLocationData[selectedProv]) {
+                amphoeSelect.disabled = false;
+                ThailandLocationData[selectedProv].forEach(amp => {
+                    let opt = document.createElement('option');
+                    opt.value = amp;
+                    opt.innerHTML = amp;
+                    amphoeSelect.appendChild(opt);
+                });
+            } else {
+                amphoeSelect.disabled = true;
+                amphoeSelect.innerHTML = '<option value="">โปรดเลือกจังหวัดก่อน</option>';
+            }
+        }
+
+        // เปิด-ปิด ฟิลด์กรอกข้อมูลเมื่อเลือกอาชีพ "อื่นๆ"
+        function toggleOtherOccupation() {
+            const occ = document.getElementById('occupation').value;
+            const wrapper = document.getElementById('otherOccupationWrapper');
+            const input = document.getElementById('otherOccupation');
+            if (occ === 'อื่นๆ') {
+                wrapper.classList.remove('hidden');
+                input.required = true;
+            } else {
+                wrapper.classList.add('hidden');
+                input.required = false;
+                input.value = '';
+            }
+        }
+
+        // ระบบสลับมุมมองระหว่างหน้าสมัครงานและหน้าแอดมิน
+        let currentView = "landing";
+        function toggleView() {
+            const landing = document.getElementById('landingPage');
+            const admin = document.getElementById('adminPage');
+            const btn = document.getElementById('viewToggleBtn');
+            
+            if (currentView === "landing") {
+                landing.classList.add('hidden');
+                admin.classList.remove('hidden');
+                btn.innerHTML = '<i class="fa-solid fa-home mr-1"></i> กลับหน้าแรก';
+                currentView = "admin";
+            } else {
+                admin.classList.add('hidden');
+                landing.classList.remove('hidden');
+                btn.innerHTML = '<i class="fa-solid fa-lock mr-1"></i> สำหรับแอดมิน';
+                currentView = "landing";
+            }
+        }
+
+        // =================================================================
+        // FUNCTION: ส่งข้อมูลฟอร์มสมัครสมาชิก (Frontend Create)
+        // =================================================================
+        async function submitForm(e) {
+            e.preventDefault();
+            
+            // ตรวจสอบเบอร์โทรไทย 10 หลักแบบง่าย (0xxxxxxxxx)
+            const phone = document.getElementById('phone').value.trim();
+            const phoneRegex = /^0[0-9]{9}$/;
+            if (!phoneRegex.test(phone)) {
+                alert("กรุณากรอกเบอร์โทรศัพท์มือถือไทยให้ถูกต้อง (เช่น 0812345678)");
+                return;
+            }
+
+            // ตรวจสอบ Account ID ให้เป็นตัวเลขล้วน
+            const accountId = document.getElementById('accountId').value.trim();
+            if (isNaN(accountId)) {
+                alert("Account ID ต้องเป็นตัวเลขล้วนเท่านั้น");
+                return;
+            }
+
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner animate-spin mr-2"></i> กำลังส่งข้อมูล...';
+
+            let occupationVal = document.getElementById('occupation').value;
+            if (occupationVal === 'อื่นๆ') {
+                occupationVal = "อื่นๆ: " + document.getElementById('otherOccupation').value.trim();
+            }
+
+            const payload = {
+                fullName: document.getElementById('fullName').value.trim(),
+                nickname: document.getElementById('nickname').value.trim(),
+                birthYear: document.getElementById('birthYear').value,
+                occupation: occupationVal,
+                province: document.getElementById('province').value,
+                amphoe: document.getElementById('amphoe').value,
+                phone: phone,
+                email: document.getElementById('email').value.trim(),
+                accountId: accountId,
+                experience: document.querySelector('input[name="experience"]:checked').value
+            };
+
+            try {
+                const response = await fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors', // แนะนำเปิด no-cors เพื่อความสะดวกบนเซิร์ฟเวอร์ Google Apps Script แบบธรรมดา
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ action: 'create', payload: payload })
+                });
+
+                // เนื่องจากโหมด no-cors เราจะไม่สามารถอ่าน JSON ลึกซึ้งได้ แต่ถ้าไม่มี error แปลว่าข้อมูลยิงเข้าสำเร็จ
+                alert("✨ ลงทะเบียนสำเร็จเรียบร้อย! ระบบจะพาคุณไปยังกลุ่มโทรเลขปิด VIP");
+                // เปลี่ยนลิงก์ปลายทางกลุ่ม Telegram ของคุณตรงนี้
+                window.location.href = "https://t.me/YourTelegramGroupLinkHere"; 
+                document.getElementById('regForm').reset();
+                
+            } catch (err) {
+                console.error(err);
+                alert("เกิดข้อผิดพลาดในการเชื่อมต่อกรุณาลองใหม่อีกครั้ง");
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>ส่งข้อมูลเพื่อรับสิทธิ์เข้ากลุ่ม Telegram</span> <i class="fa-solid fa-paper-plane"></i>';
+            }
+        }
+
+        // =================================================================
+        // FUNCTION: ดึงและจัดการข้อมูลฝั่งระบบหลังบ้าน (Admin CRUD)
+        // =================================================================
+        let globalAdminData = [];
+
+        async function fetchAdminData() {
+            const password = document.getElementById('adminPasswordInput').value;
+            if(!password) return alert("กรุณาป้อนรหัสผ่านก่อนครับ");
+
+            const authSection = document.getElementById('adminAuthSection');
+            const contentSection = document.getElementById('adminContentSection');
+            const tableBody = document.getElementById('adminTableBody');
+            
+            tableBody.innerHTML = '<tr><td colspan="7" class="text-center p-8"><i class="fa-solid fa-spinner animate-spin text-xl text-emerald-400"></i> กำลังโหลดข้อมูล...</td></tr>';
+            
+            try {
+                // สำหรับ Read/Update/Delete แนะนำให้ใช้ fetch ปกติ (ถ้าเจอปัญหา CORS ให้ติดตั้งบริการหรือเขียนแบบ Web App รับค่าได้ดีขึ้น)
+                const res = await fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'text/plain' }, // ป้องกันการติด pre-flight CORS ใน Apps script บ่อยครั้ง
+                    body: JSON.stringify({ action: 'read', password: password })
+                });
+                
+                const result = await res.json();
+                if (!result.success) {
+                    alert(result.message);
+                    tableBody.innerHTML = '';
+                    return;
+                }
+
+                authSection.classList.add('hidden');
+                contentSection.classList.remove('hidden');
+                
+                globalAdminData = result.data;
+                renderTable(globalAdminData);
+
+            } catch (err) {
+                alert("เกิดข้อผิดพลาด หรือรหัสผ่านไม่ถูกต้อง (ตรวจสอบสิทธิ์ CORS หรือ URL ให้ถูกต้อง)");
+                console.error(err);
+            }
+        }
+
+        function renderTable(data) {
+            const tableBody = document.getElementById('adminTableBody');
+            tableBody.innerHTML = '';
+
+            if (data.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="7" class="text-center p-6 text-slate-500">ไม่มีข้อมูลผู้ลงทะเบียน</td></tr>';
+                return;
+            }
+
+            data.forEach(item => {
+                let statusBadge = '';
+                if(item.status === 'Approved') statusBadge = '<span class="bg-emerald-500/10 text-emerald-400 text-xs px-2.5 py-1 rounded-full border border-emerald-500/20">อนุมัติแล้ว</span>';
+                else if(item.status === 'Rejected') statusBadge = '<span class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded-full border border-rose-500/20">ไม่อนุมัติ</span>';
+                else statusBadge = '<span class="bg-amber-500/10 text-amber-400 text-xs px-2.5 py-1 rounded-full border border-amber-500/20">รอตรวจ</span>';
+
+                const tr = document.createElement('tr');
+                tr.className = 'hover:bg-slate-900/50 transition';
+                tr.innerHTML = `
+                    <td class="p-4 font-mono text-slate-400">${item.id}</td>
+                    <td class="p-4 font-medium text-white">${item.fullName} <span class="text-xs text-slate-400">(${item.nickname})</span></td>
+                    <td class="p-4 font-mono text-emerald-400 font-bold">${item.accountId}</td>
+                    <td class="p-4 text-xs">
+                        <div><i class="fa-solid fa-phone text-slate-500 mr-1"></i> ${item.phone}</div>
+                        <div class="text-slate-400 mt-0.5"><i class="fa-solid fa-envelope text-slate-500 mr-1"></i> ${item.email}</div>
+                    </td>
+                    <td class="p-4 text-xs text-slate-300">${item.province}</td>
+                    <td class="p-4">${statusBadge}</td>
+                    <td class="p-4 text-center space-x-2">
+                        <button onclick="openEditModal(${item.id})" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs px-3 py-1.5 rounded-lg border border-slate-700 transition">
+                            <i class="fa-solid fa-pen-to-square"></i> แก้ไข
+                        </button>
+                        <button onclick="deleteRecord(${item.id})" class="bg-rose-500/10 hover:bg-rose-500 text-rose-400 hover:text-white text-xs px-3 py-1.5 rounded-lg border border-rose-500/20 transition">
+                            <i class="fa-solid fa-trash"></i> ลบ
+                        </button>
+                    </td>
+                `;
+                tableBody.appendChild(tr);
+            });
+        }
+
+        // ระบบ Modal แก้ไขข้อมูล
+        function openEditModal(id) {
+            const item = globalAdminData.find(d => d.id === id);
+            if(!item) return;
+
+            document.getElementById('editId').value = item.id;
+            document.getElementById('editFullName').value = item.fullName;
+            document.getElementById('editNickname').value = item.nickname;
+            document.getElementById('editPhone').value = item.phone;
+            document.getElementById('editEmail').value = item.email;
+            document.getElementById('editAccountId').value = item.accountId;
+            document.getElementById('editStatus').value = item.status || 'Pending';
+            document.getElementById('editNotes').value = item.notes || '';
+
+            document.getElementById('editModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('editModal').classList.add('hidden');
+        }
+
+        async function saveEdit(e) {
+            e.preventDefault();
+            const password = document.getElementById('adminPasswordInput').value;
+            
+            const payload = {
+                id: document.getElementById('editId').value,
+                fullName: document.getElementById('editFullName').value,
+                nickname: document.getElementById('editNickname').value,
+                phone: document.getElementById('editPhone').value,
+                email: document.getElementById('editEmail').value,
+                accountId: document.getElementById('editAccountId').value,
+                status: document.getElementById('editStatus').value,
+                notes: document.getElementById('editNotes').value
+            };
+
+            try {
+                const res = await fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'text/plain' },
+                    body: JSON.stringify({ action: 'update', payload: payload, password: password })
+                });
+                const result = await res.json();
+                if(result.success) {
+                    alert("บันทึกการแก้ไขข้อมูลสำเร็จ!");
+                    closeModal();
+                    fetchAdminData(); // โหลดข้อมูลตารางใหม่
+                } else {
+                    alert(result.message);
+                }
+            } catch (err) {
+                alert("เกิดข้อผิดพลาดในการบันทึกข้อมูล");
+            }
+        }
+
+        async function deleteRecord(id) {
+            if(!confirm(`⚠️ คุณแน่ใจใช่ไหมที่จะลบข้อมูล ID: ${id} ออกจากระบบถาวร?`)) return;
+            const password = document.getElementById('adminPasswordInput').value;
+
+            try {
+                const res = await fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'text/plain' },
+                    body: JSON.stringify({ action: 'delete', id: id, password: password })
+                });
+                const result = await res.json();
+                if(result.success) {
+                    alert("ลบข้อมูลสำเร็จ!");
+                    fetchAdminData();
+                } else {
+                    alert(result.message);
+                }
+            } catch (err) {
+                alert("เกิดข้อผิดพลาดในการลบข้อมูล");
+            }
+        }
+    </script>
+</body>
+</html>
